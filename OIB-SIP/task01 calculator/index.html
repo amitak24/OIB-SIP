@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Calculator</title>
+</head>
+
+<body>
+  <div class="calc">
+    <div class="title">
+      <h1>My Calculator</h1>
+    </div>
+    <br>
+    <div class="calculator">
+      <div class="display">
+        <div id="input-display" class="input-display"></div>
+        <div id="result-display" class="result-display"></div>
+      </div>
+      <div class="buttons">
+          <button onclick="show('(')">(</button>
+          <button onclick="show(')')">)</button>
+          <button onclick="clearDisplay()">C</button>
+          <button class="delete" onclick="backspace()">Del</button>
+        <button onclick="show('7')">7</button>
+        <button onclick="show('8')">8</button>
+        <button onclick="show('9')">9</button>
+        <button onclick="show('+')">+</button>
+        <button onclick="show('4')">4</button>
+        <button onclick="show('5')">5</button>
+        <button onclick="show('6')">6</button>
+        <button onclick="show('-')">-</button>
+        <button onclick="show('1')">1</button>
+        <button onclick="show('2')">2</button>
+        <button onclick="show('3')">3</button>
+        <button onclick="show('*')">*</button>
+        <button onclick="show('0')">0</button>
+        <button onclick="show('.')">.</button>
+        <button onclick="show('Math.sqrt(')">√</button>
+        <button onclick="show('/')">/</button>
+        <button class="equals" onclick="calculate()">=</button>
+        <button onclick="show('%')">%</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

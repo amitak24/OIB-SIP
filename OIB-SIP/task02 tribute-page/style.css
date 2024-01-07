@@ -1,0 +1,95 @@
+body {
+    font-family: 'Helvetica';
+    margin: 0;
+    padding: 0;
+    background-color: #060606;
+    color: #333;
+    animation: fadeIn 1s ease-in-out; /* Add a fade-in animation to the entire body */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    background-color: #0d0d0d;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    animation: slideIn 2s ease-in-out;
+    
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+h1{
+    color: #fff;
+}
+h2 {
+    color: #0d0d0d;
+    animation: slideIn 2s ease-in-out;
+}
+
+p {
+    background-color: black;
+    color: #f8f8f8;
+    line-height: 1.6rem;
+    padding: 1rem;
+    animation: slideIn 2s ease-in-out;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    animation: scaleIn 2s ease-in-out;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+footer {
+    background-color: solid black;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+@keyframes scaleIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}

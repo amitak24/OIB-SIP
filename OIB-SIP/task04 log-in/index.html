@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register and Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <form id="registerForm" class="form">
+      <h2>Register Here</h2>
+      <label for="regUsername">User Id:</label>
+      <input type="text" id="regUsername" required>
+
+      <label for="regPassword">Password:</label>
+      <input type="password" id="regPassword" required>
+
+      <button type="button" onclick="register()">Register</button>
+      <p class="form-link">Already registered? <a href="#" onclick="showLoginForm()">Login here</a></p>
+    </form>
+
+    <form id="loginForm" class="form" style="display: none;">
+      <h2>Login</h2>
+      <label for="loginUsername">Username:</label>
+      <input type="text" id="loginUsername" required>
+
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" required>
+
+      <button type="button" onclick="login()">Login</button>
+      <p class="form-link">Don't have an account? <a href="#" onclick="showRegisterForm()">Register here</a></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
